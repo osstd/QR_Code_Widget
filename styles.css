@@ -8,11 +8,11 @@
 body {
   background: #555;
 }
-
 .container {
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
   padding: 25px 35px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -75,6 +75,7 @@ body {
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   padding: 10px;
+  border-radius: 10%;
   z-index: 1;
   display: none;
   right: -90px;
@@ -100,5 +101,11 @@ body {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #popper {
+    right: 20px;
   }
 }
