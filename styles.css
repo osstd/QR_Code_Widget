@@ -9,7 +9,7 @@ body {
   background: #555;
 }
 .container {
-  width: 100%;
+  width: 90%;
   max-width: 400px;
   padding: 25px 35px;
   position: fixed;
@@ -104,12 +104,8 @@ body {
   }
 }
 
-@media screen and (max-width: 400px) {
-  .container {
-    max-width: 350px;
-  }
-  
-  #popper {
-    right: 20px;
+@media screen and (max-width: 414px) {
+  #imgBox:hover + #popper{
+    display: none;
   }
 }

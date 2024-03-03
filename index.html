@@ -15,7 +15,7 @@
         <img src="" id="qrImage" alt="gen qr image" />
         <div id="popper">Click to download</div>
       </div>
-      <button onclick="genQr()">Gen QR Code</button>
+      <button onclick="genQr()">QR Code</button>
     </div>
     <script>
       let imgBox = document.getElementById("imgBox");
@@ -31,6 +31,9 @@
           imgBox.classList.add("show-img");
           imgBox.addEventListener("mouseover", function () {
             popper.style.display = "block";
+            setTimeout(function () {
+              popper.style.display = "none";
+            }, 1500);
           });
 
           imgBox.addEventListener("mouseout", function () {
